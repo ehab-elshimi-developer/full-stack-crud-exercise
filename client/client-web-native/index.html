@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books CRUD</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="css/fontawesome/all.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-style.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <h1 class="mb-4">📚 Books CRUD (Native Client)</h1>
+
+      <!-- Books Table -->
+      <table class="table table-bordered table-striped" id="booksTable">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Add Book Form -->
+      <h3 class="mt-5">Add Book</h3>
+      <form id="bookForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            placeholder="Title"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            placeholder="Author"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="year"
+            placeholder="Year"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- App JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
