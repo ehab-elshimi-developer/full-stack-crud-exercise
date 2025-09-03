@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -7,6 +9,4 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/test', function () {
-    return response()->json(['message' => 'API working!']);
-});
+Route::apiResource('books', BookController::class);
