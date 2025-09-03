@@ -1,9 +1,12 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| API Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/', fn() => response()->json(['Laravel' => app()->version()]));
+
+Route::get('/test', function () {
+    return response()->json(['message' => 'API working!']);
+});
